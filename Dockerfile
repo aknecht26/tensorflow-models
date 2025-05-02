@@ -21,7 +21,7 @@ WORKDIR /repo
 RUN pip install -r official/requirements.txt
 
 # Install the package in editable mode
-RUN pip install -e .
+RUN pip install -e official/pip_package/
 
 # Set up environment variables
 ENV PYTHONPATH=/repo
